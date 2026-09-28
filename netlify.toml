@@ -1,6 +1,16 @@
 [build]
   publish = "."
 
+# book.systemai.co.uk: short booking link. Lands on the /book page once the
+# domain alias exists on this Netlify site and GoDaddy has CNAME book ->
+# systemai-frontend.netlify.app. Until then this rule never matches. 302 so the
+# target can move (for example to a self-hosted Cal.com) without cached hops.
+[[redirects]]
+  from = "https://book.systemai.co.uk/*"
+  to = "https://systemai.co.uk/book"
+  status = 302
+  force = true
+
 # jsmcc masjid-screen QR: pinned DIRECT so a code printed on a physical
 # screen never depends on the n8n box being up (Amr, 30 Aug 2026, TG 1922).
 # First match wins, so this shields /jsmcc-cafe from the tracker catch-all
