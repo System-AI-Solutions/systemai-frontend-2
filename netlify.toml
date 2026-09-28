@@ -1,6 +1,22 @@
 [build]
   publish = "."
 
+# In-person meeting page, short links. These two sit ABOVE the book
+# subdomain catch-all below, because the first matching rule wins and the
+# catch-all would otherwise send book.systemai.co.uk/in-person to /book.
+# systemai.co.uk/in-person also lands here instead of the /:id tracker.
+[[redirects]]
+  from = "https://book.systemai.co.uk/in-person"
+  to = "https://systemai.co.uk/book/in-person"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/in-person"
+  to = "/book/in-person"
+  status = 301
+  force = true
+
 # book.systemai.co.uk: short booking link. Lands on the /book page once the
 # domain alias exists on this Netlify site and GoDaddy has CNAME book ->
 # systemai-frontend.netlify.app. Until then this rule never matches. 302 so the
