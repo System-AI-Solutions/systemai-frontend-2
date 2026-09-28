@@ -36,4 +36,5 @@ next window → keep or revert). Tooling: Microsoft Clarity (project
 
 | Date | Change | Hypothesis | Metric watched | Result (next window) |
 |---|---|---|---|---|
+| 2026-09-28 | Booking tool swap, not a test: every booking button ("Let's talk" on all pages, "Book a 20 minute fit call" on the homepage) now opens https://systemai.co.uk/book (Cal.com inline embed, same tab) instead of calendly.com in a new tab. Button click event names unchanged. New GA4 event `book_booking_success` fires when a booking completes on /book. CSP allows app.cal.com (script, frame, connect). The Clarity smart event "outbound click to calendly.com" no longer matches anything: retarget it to page visits of /book. | Tool change only, the click metric keeps its meaning. | Button clicks as before, plus `book_booking_success`. | n/a |
 | 2026-07-02 | Instrumentation only: Clarity added to all 5 pages; GA4 + analytics.js added to case-study/privacy/terms pages (was homepage-only); CSP updated for clarity.ms + unpkg.com; privacy policy discloses Clarity. | Not a site change — baseline starts on deploy. | — | — |
