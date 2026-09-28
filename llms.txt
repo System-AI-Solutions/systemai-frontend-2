@@ -6,6 +6,7 @@ Canonical: https://systemai.co.uk
 
 ## Pages
 - https://systemai.co.uk/
+- https://systemai.co.uk/book (book a free 30 minute call)
 - https://systemai.co.uk/privacy.html
 - https://systemai.co.uk/terms.html
 - https://systemai.co.uk/case-studies/the-srama-group.html
