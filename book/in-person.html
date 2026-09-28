@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Book an in-person meeting with Amr at System AI. Pick a time that suits you.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Book an in-person meeting | System AI">
+    <meta property="og:description"
+        content="Book an in-person meeting with Amr. Pick a time that suits you.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://systemai.co.uk/book/in-person">
+    <link rel="canonical" href="https://systemai.co.uk/book/in-person">
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png?v=20260421" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg?v=20260421" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=20260421" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=20260421" />
+    <meta name="apple-mobile-web-app-title" content="System AI" />
+    <link rel="manifest" href="/favicon/site.webmanifest?v=20260421" />
+    <title>Book an in-person meeting | System AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://app.cal.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter+Tight:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZHPB1VY2K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', 'G-4ZHPB1VY2K');
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "xg8c31d1ng");
+    </script>
+    <style>
+        .book-section {
+            padding: var(--spacing-12) clamp(16px, 4vw, 32px) var(--spacing-20);
+            max-width: 1120px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .book-head {
+            max-width: 720px;
+            margin: 0 auto var(--spacing-8);
+            text-align: center;
+        }
+
+        .book-kicker {
+            display: inline-block;
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #a8a8a8;
+            margin-bottom: var(--spacing-3);
+        }
+
+        .book-title {
+            font-family: "Inter Tight", var(--font-family);
+            font-size: clamp(2rem, 4vw + 0.5rem, 3.5rem);
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            color: #f0f0f2;
+            margin-bottom: var(--spacing-4);
+        }
+
+        .book-intro {
+            font-size: clamp(1rem, 0.5vw + 0.85rem, 1.25rem);
+            line-height: 1.5;
+            color: #a8a8a8;
+        }
+
+        .book-embed {
+            position: relative;
+            width: 100%;
+            min-height: 640px;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+        }
+
+        .book-status {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-6);
+            text-align: center;
+            font-size: var(--font-size-sm);
+            color: #a8a8a8;
+            pointer-events: none;
+        }
+
+        .book-status a {
+            pointer-events: auto;
+            color: #f0f0f2;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .book-embed.is-ready {
+            min-height: 0;
+        }
+
+        .book-embed.is-ready .book-status {
+            display: none;
+        }
+
+        .book-note {
+            max-width: 720px;
+            margin: var(--spacing-6) auto 0;
+            text-align: center;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            color: #a8a8a8;
+        }
+
+        .book-note a {
+            color: #f0f0f2;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        @media (max-width: 600px) {
+            .book-section {
+                padding-top: var(--spacing-8);
+            }
+
+            .book-head {
+                text-align: left;
+                margin-bottom: var(--spacing-6);
+            }
+
+            .book-note {
+                text-align: left;
+            }
+
+            .book-embed {
+                border-radius: var(--border-radius-md);
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: var(--color-gray-50);">
+    <!-- Header -->
+    <header class="header">
+        <div class="common-wrap">
+            <div class="header-inner">
+                <a href="/" class="logo">
+                    <img src="/assets/system-ai-logos/systemai-logo-v3.svg" alt="System AI">
+                </a>
+                <nav class="nav">
+                    <a href="/#work" class="nav-link">Case studies</a>
+                    <a href="/#about" class="nav-link">About</a>
+                    <a href="/#services" class="nav-link">Services</a>
+                    <a href="/#reviews" class="nav-link">Reviews</a>
+                </nav>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="#booking" class="btn btn-primary btn-sm desk" data-analytics-event="book_header_lets_talk_click">
+                        <div class="btn-text-wrap">
+                            <div class="btn-text">Let's talk</div>
+                            <div class="btn-text-hover">Let's talk</div>
+                        </div>
+                        <div class="btn-icon-box">
+                            <img src="/assets/arrows/white-arrow-points-right-black-bg.svg" alt=""
+                                class="btn-icon-hover">
+                            <img src="/assets/arrows/white-arrow-points-right-black-bg.svg" alt="" class="btn-icon">
+                        </div>
+                    </a>
+                    <button class="menu-btn" aria-label="Menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="book-section">
+        <div class="book-head">
+            <p class="book-kicker">In person</p>
+            <h1 class="book-title">Let's meet in person</h1>
+            <p class="book-intro">Book an in-person meeting with Amr. Pick a time that suits you.</p>
+        </div>
+
+        <div class="book-embed" id="booking" aria-label="Booking calendar">
+            <p class="book-status" id="booking-status">Loading available times...</p>
+        </div>
+        <noscript>
+            <p class="book-note">The booking calendar needs JavaScript. You can also
+                <a href="https://cal.com/amrhasanin/in-person">book on Cal.com</a> or email
+                <a href="mailto:amr@systemai.co.uk">amr@systemai.co.uk</a>.</p>
+        </noscript>
+
+        <p class="book-note">Times are shown in your own time zone, and your confirmation email has the meeting details.
+            Prefer to write first? Email <a href="mailto:amr@systemai.co.uk">amr@systemai.co.uk</a>.
+            Bookings are handled by Cal.com, see our <a href="/privacy.html">Privacy Policy</a>.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="/assets/system-ai-logos/systemai-logo-v3.svg" alt="System AI">
+            </div>
+            <div class="footer-links">
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+            </div>
+            <p class="copyright">&copy; 2026 System AI Solutions Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cal.com inline embed (hosted Cal.com, user amrhasanin, event in-person) -->
+    <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+
+        (function () {
+            var CAL_LINK = "amrhasanin/in-person";
+            var box = document.getElementById("booking");
+            var status = document.getElementById("booking-status");
+            var ready = false;
+
+            function track(name, params) {
+                if (window.analytics && typeof window.analytics.trackEvent === "function") {
+                    window.analytics.trackEvent(name, params || {});
+                } else if (typeof window.gtag === "function") {
+                    window.gtag("event", name, params || {});
+                }
+            }
+
+            function markReady() {
+                if (ready) return;
+                ready = true;
+                box.classList.add("is-ready");
+            }
+
+            Cal("init", "inperson", { origin: "https://app.cal.com" });
+
+            Cal.ns.inperson("inline", {
+                elementOrSelector: "#booking",
+                config: { layout: "month_view", theme: "dark" },
+                calLink: CAL_LINK
+            });
+
+            Cal.ns.inperson("ui", {
+                theme: "dark",
+                hideEventTypeDetails: false,
+                layout: "month_view",
+                cssVarsPerTheme: {
+                    dark: {
+                        "cal-brand": "#ffffff",
+                        "cal-brand-emphasis": "#e5e5e5",
+                        "cal-brand-text": "#0a0a0a",
+                        "cal-bg": "#1e1d21",
+                        "cal-bg-muted": "#1c1c20",
+                        "cal-bg-subtle": "#242426",
+                        "cal-bg-emphasis": "#2e2e32",
+                        "cal-border": "#333337",
+                        "cal-border-subtle": "#262626",
+                        "cal-text": "#f0f0f2",
+                        "cal-text-emphasis": "#ffffff",
+                        "cal-text-subtle": "#a8a8a8",
+                        "cal-text-muted": "#a8a8a8"
+                    },
+                    light: {
+                        "cal-brand": "#0a0a0a"
+                    }
+                }
+            });
+
+            Cal.ns.inperson("on", { action: "linkReady", callback: markReady });
+
+            var booked = false;
+            function onBooked() {
+                if (booked) return;
+                booked = true;
+                track("book_inperson_booking_success", { event_type: "in-person" });
+            }
+            Cal.ns.inperson("on", { action: "bookingSuccessfulV2", callback: onBooked });
+            Cal.ns.inperson("on", { action: "bookingSuccessful", callback: onBooked });
+
+            // If the calendar has not loaded after 15 s, offer the direct link instead of a blank box.
+            setTimeout(function () {
+                if (ready) return;
+                status.innerHTML = 'The calendar is taking a while to load. ' +
+                    '<a href="https://cal.com/' + CAL_LINK + '">Open the booking page</a> or email ' +
+                    '<a href="mailto:amr@systemai.co.uk">amr@systemai.co.uk</a>.';
+            }, 15000);
+        })();
+    </script>
+    <script src="/navbar.js"></script>
+    <script defer src="/analytics.js"></script>
+</body>
+
+</html>
