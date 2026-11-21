@@ -50,6 +50,42 @@
             y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "xg8c31d1ng");
     </script>
+    <!-- Structured data (schema.org JSON-LD). Every value below is text already visible on this page or in its
+         meta tags. No address (the registered office is a home address), no phone, no ratings or reviews. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://systemai.co.uk/#organization",
+          "name": "System AI",
+          "legalName": "System AI Solutions Ltd",
+          "url": "https://systemai.co.uk/",
+          "logo": "https://systemai.co.uk/assets/system-ai-logos/systemai-logo-v3.svg",
+          "email": "amr@systemai.co.uk",
+          "description": "System AI builds AI-powered workflows that delete busywork for operations-heavy SMBs. From WhatsApp to CRM, we automate the manual steps your team shouldn't be doing."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://systemai.co.uk/#website",
+          "url": "https://systemai.co.uk/",
+          "name": "System AI",
+          "publisher": { "@id": "https://systemai.co.uk/#organization" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://systemai.co.uk/#service",
+          "name": "AI workflow automation for operations-heavy SMBs",
+          "serviceType": "AI workflow automation",
+          "url": "https://systemai.co.uk/",
+          "description": "AI-powered workflows that delete busywork for operations-heavy SMBs, from WhatsApp to CRM.",
+          "provider": { "@id": "https://systemai.co.uk/#organization" },
+          "audience": { "@type": "BusinessAudience", "name": "Operations-heavy small and medium businesses" }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
